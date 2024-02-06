@@ -1,90 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
     <title>personal portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d483699c90.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d483699c90.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section id="main" class="main">
-        <section class="fixed">
-            <div class="nav-container">
-                <nav>
-                    <div ><img src="images/logo.png" alt="logo" class="logo"></div>
-                    <ul id="sidemenu">
-                        <li><a href="#main">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars fas"onclick="openmenu()"></i>
-                </nav>
+      <section class="fixed">
+        <div class="nav-container">
+          <nav>
+            <div><img src="images/logo.png" alt="logo" class="logo" /></div>
+            <ul id="sidemenu">
+              <li><a href="#main">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i
+                class="fa-regular fa-circle-xmark fas"
+                onclick="closemenu()"
+              ></i>
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <div class="intro">
+          <h2>Hello, I'm Uche <br />Emmanuel</h2>
+          <h3>FRONT-END DEVELOPER</h3>
+        </div>
+      </section>
+      <!-- ------------about section----------- -->
+      <section id="about" class="about">
+        <div class="about-container">
+          <div class="about-colume">
+            <div class="about-image">
+              <img src="images/image1 (1).png" alt="my-image" />
             </div>
-            <div class="intro">
-                <h2>
-                Hello, I'm Uche <br>Emmanuel
-                </h2>
-                <h3>
-                    FRONT-END DEVELOPER
-                </h3>
-            </div>
-        </section>
-        <!-- ------------about section----------- -->
-        <section id="about"class="about">
-            <div class="about-container">
-                <div class="about-colume">
-                    <div class="about-image">
-                        <img src="images/image1 (1).png" alt="my-image">
-                    </div>
-                    <div class="about-text">
-                        <h2 class="sub-title">About Me</h2>
-                        <p>
-                           Hello! I am a Front-End developer and a UI/UX designer from Nigeria. I am cofortable working with javascript, react.js, HTML/CSS to provide responsible web design to deliver exceptional customer experience.
-                        </p>
-                        <div class="qualification">
-                            <p class="qual-links active" onclick="opentab('skills')">Skills</p>
-                            <p class="qual-links"  onclick="opentab('experience')">Experience</p>
-                            <p class="qual-links"  onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="qual-content active-content" id="skills">
-                            <ul>
-                               
-                                <li>
-                                    <span>web development</span><br> web app development
-                                </li>
-                                <li>
-                                    <span>UI/UX</span><br> Designing web/app interface
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="qual-content" id="education">
-                            <ul>
-                                <li>
-                                    <span>2022. Bsc Accounting</span><br> university of Nigeria, Enugu Campus.
-                                </li>
-                                <li>
-                                    <span>2022. Javascript soft course</span><br> linkedin learning
-                                </li>
-                                <li>
-                                    <span>2022. zero to Mastery</span><br> Udemy 
-                                </li>
-                                <li>
-                                    <span>2022. KodeCamp bootcamp</span><br> KodeCamp
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="qual-content" id="experience">
-                            <!-- <ul>
+            <div class="about-text">
+              <h2 class="sub-title">About Me</h2>
+              <p>
+                Hello! I am a Front-End developer and a UI/UX designer from
+                Nigeria. I am cofortable working with javascript, react.js,
+                HTML/CSS to provide responsible web design to deliver
+                exceptional customer experience.
+              </p>
+              <div class="qualification">
+                <p class="qual-links active" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="qual-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="qual-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="qual-content active-content" id="skills">
+                <ul>
+                  <li>
+                    <span>web development</span><br />
+                    web app development
+                  </li>
+                  <li>
+                    <span>UI/UX</span><br />
+                    Designing web/app interface
+                  </li>
+                </ul>
+              </div>
+              <div class="qual-content" id="education">
+                <ul>
+                  <li>
+                    <span>2022. Bsc Accounting</span><br />
+                    university of Nigeria, Enugu Campus.
+                  </li>
+                  <li>
+                    <span>2022. Javascript soft course</span><br />
+                    linkedin learning
+                  </li>
+                  <li>
+                    <span>2022. zero to Mastery</span><br />
+                    Udemy
+                  </li>
+                  <li>
+                    <span>2022. KodeCamp bootcamp</span><br />
+                    KodeCamp
+                  </li>
+                </ul>
+              </div>
+              <div class="qual-content" id="experience">
+                <!-- <ul>
                                 <li>
                                     <span>UI/UX</span><br> Designing web/app interface
                                 </li>
@@ -95,122 +112,153 @@
                                     <span>UI/UX</span><br> Designing web/app interface
                                 </li>
                             </ul> -->
-                            <P>
-                                Worked on over 20 projects utilizing javascript, react.js, HTML/CSS with over 2 years experience and still building.
-                            </P>
-                        </div>
-                        
-                    </div>
-                    
-
-
-                </div>
+                <p>
+                  Worked on over 20 projects utilizing javascript, react.js,
+                  HTML/CSS with over 2 years experience and still building.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- -------------SERVICES------------- -->
-        <section id="service" class="service">
-            <div class="service-container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="service-list">
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>web design</h2>
-                        <p> I develop responsive website and webapp with excepttional customer experience</p>
-                        <a href="#">learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-sharp fa-solid fa-crop"></i>
-                        <h2>UI/UX design</h2>
-                        <p>Get designs for your mobile app, website/web app.</p>
-                        <a href="#">learn more</a>
-                    </div>
-                    <div>
-                        <i class="fa-brands fa-app-store-ios"></i>
-                        <h2>App design</h2>
-                        <p> work in progress......</p>
-                        <a href="#">learn more</a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------SERVICES------------- -->
+      <section id="service" class="service">
+        <div class="service-container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="service-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>web design</h2>
+              <p>
+                I develop responsive website and webapp with excepttional
+                customer experience
+              </p>
+              <a href="#">learn more</a>
             </div>
-        </section>
-        <!-- -----------PORTFOLIO----- -->
-        <section id="portfolio" class="portfolio">
-            <div class="portfolio-container">
-                <h1 class="sub-title">Portfolio</h1>
-                <div class="worklist">
-                    <div class="work">
-                        <img src="images/image2.jpg" alt="">
-                        <div class="layer">
-                            <h3>
-                                Auto servicing site
-                            </h3>
-                            <p>The website is a site for car servicing. </p>
-                            <a href="https://aileswhale.github.io/customer-responsive-page/index.html#">Learn more</a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/image3.jpg" alt="">
-                    <div class="layer">
-                        <h3>
-                            Airbnb experience 
-                        </h3>
-                        <p>A web app that connects users to interactive activity led by popular hosts</p>
-                        <a href="https://aileswhale.github.io/react-project1/">Learn more</a>
-                    </div>
-                    </div>
-                    <div class="work">
-                        <img src="images/images4.jpg" alt="">
-                    <div class="layer">
-                        <h3>
-                            Travel journal
-                        </h3>
-                        <p>A website that keeps track of places visited </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    </div>
-                </div>
-                <a href="https://github.com/Aileswhale?tab=repositories" class="btn"> See more</a>
+            <div>
+              <i class="fa-sharp fa-solid fa-crop"></i>
+              <h2>UI/UX design</h2>
+              <p>Get designs for your mobile app, website/web app.</p>
+              <a href="#">learn more</a>
             </div>
-        </section>
-        <!-- -------------CONTACT------------- -->
-        <section id="contact" class="contact">
-            <div class="contact-container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title sub-contact">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i>ucheodilachi@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>+2348140187348</p>
-                        <div class="social-icons">
-                            <a href="https://web.facebook.com/uche.odilachi/about"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://twitter.com/Immawillson?t=gjebYCxsbGNRPRHjMpDeeQ&s=09"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://instagram.com/immanuel042?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/uche-emmanuel-553b7a1a8/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/Aileswhale"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <a href="images/__Frontenddeveloper__.pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email">
-                            <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                </div>
+            <div>
+              <i class="fa-brands fa-app-store-ios"></i>
+              <h2>App design</h2>
+              <p>work in progress......</p>
+              <a href="#">learn more</a>
             </div>
-        </section>
-        <!-- -------------footer----------- -->
-        <section>
-            <div class="foooter">
-                <div class="footer-containner">
-                   <p>copyright© Immanuel 2024</p>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- -----------PORTFOLIO----- -->
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+          <h1 class="sub-title">Portfolio</h1>
+          <div class="worklist">
+            <div class="work">
+              <img src="images/image2.jpg" alt="" />
+              <div class="layer">
+                <h3>Auto servicing site</h3>
+                <p>The website is a site for car servicing.</p>
+                <a
+                  href="https://aileswhale.github.io/customer-responsive-page/index.html#"
+                  >Learn more</a
+                >
+              </div>
             </div>
-        </section>
+            <div class="work">
+              <img src="images/image3.jpg" alt="" />
+              <div class="layer">
+                <h3>Airbnb experience</h3>
+                <p>
+                  A web app that connects users to interactive activity led by
+                  popular hosts
+                </p>
+                <a href="https://aileswhale.github.io/react-project1/"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/images4.jpg" alt="" />
+              <div class="layer">
+                <h3>Travel journal</h3>
+                <p>A website that keeps track of places visited</p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/Aileswhale?tab=repositories" class="btn">
+            See more</a
+          >
+        </div>
+      </section>
+      <!-- -------------CONTACT------------- -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title sub-contact">Contact Me</h1>
+              <p><i class="fa-solid fa-envelope"></i>ucheodilachi@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>+2348140187348</p>
+              <div class="social-icons">
+                <a href="https://web.facebook.com/uche.odilachi/about"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a
+                  href="https://twitter.com/Immawillson?t=gjebYCxsbGNRPRHjMpDeeQ&s=09"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://instagram.com/immanuel042?igshid=YmMyMTA2M2Y="
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/uche-emmanuel-553b7a1a8/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Aileswhale"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <a
+                href="images/__Frontenddeveloper__.pdf"
+                download
+                class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input type="email" name="Email" placeholder="Your Email" />
+                <textarea
+                  name="Message"
+                  id=""
+                  cols=""
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -------------footer----------- -->
+      <section>
+        <div class="foooter">
+          <div class="footer-containner">
+            <p>copyright &copy; Immanuel <span id="currentyear"></span></p>
+          </div>
+        </div>
+      </section>
     </section>
-   
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

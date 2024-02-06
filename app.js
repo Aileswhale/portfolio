@@ -1,7 +1,9 @@
 let qualLinks = document.getElementsByClassName("qual-links");
 let qualContents = document.getElementsByClassName("qual-content");
 let sidemenu = document.getElementById("sidemenu")
-
+let getcurrentyear= document.getElementById("currentyear")
+const year =  new Date().getFullYear();
+getcurrentyear.textContent = (year);
 
 let opentab = (tabname)=>{
     for (qualLink of qualLinks) {
