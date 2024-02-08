@@ -168,7 +168,6 @@ nav ul li a:hover{
     display: block;
 }
 #experience p{
-    width: 60%;
 }
 /* ------------------- SERVICE SECTION------------------- */
 .service{
@@ -187,8 +186,7 @@ nav ul li a:hover{
 }
 .service-list div{
     background-color: rgb(42, 51, 59);
-    padding: 40px;
-    font-size: 13px;
+    padding: 10px;
     font-weight: 300;
     border-radius:10px ;
     transition: background 0.5s, transform 0.5s;
