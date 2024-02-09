@@ -237,13 +237,13 @@ nav ul li a:hover {
   height: 200px;
 }
 .work img {
-/* object-fit: contain;
-  object-position: left; */
+    object-fit: cover;
+    object-position: top left;
+  width: 100%;
   border-radius: 10px;
-  transition: transform 0.5s;
-  height: 300px;
   display: block;
-
+  transition: transform 0.5s;
+  height: 100%;
 }
 .work:hover img {
   transform: scale(1.1);
