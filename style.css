@@ -237,11 +237,13 @@ nav ul li a:hover {
   height: 200px;
 }
 .work img {
-  width: 100%;
+/* object-fit: contain;
+  object-position: left; */
   border-radius: 10px;
-  display: block;
   transition: transform 0.5s;
   height: 300px;
+  display: block;
+
 }
 .work:hover img {
   transform: scale(1.1);
@@ -489,7 +491,14 @@ nav .fas {
   .portfolio {
     padding: 2.5rem 1rem;
   }
-
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.layer a {
+  margin-top: 0.5rem;
+  
+}
   .row {
     flex-direction: column;
     padding: 0 1rem;
