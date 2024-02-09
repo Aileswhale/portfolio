@@ -422,12 +422,7 @@ nav .fas {
     cursor: pointer;
   }
 
-  .fixed {
-    /* background: url("/images/bgdphone1.png");
-                         background-repeat: no-repeat;
-                         background-position: right bottom; */
-  }
-
+  
   .intro {
     /* margin-top: 20%; */
     top: 20%;
@@ -559,11 +554,7 @@ nav .fas {
     left: 25px;
     cursor: pointer;
   }
-  .fixed {
-    /* background: url("/images/bgdphone1.png");
-                     background-repeat: no-repeat;
-                     background-position: right bottom; */
-  }
+  
 
   .intro {
     margin-top: 40%;
