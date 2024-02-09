@@ -260,7 +260,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 2.5rem;
+  padding: 0 1rem;
   text-align: center;
   font-size: 0.9rem;
   transition: height 0.5s;
