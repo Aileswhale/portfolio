@@ -164,6 +164,7 @@ nav ul li a:hover {
   color: rgb(108, 92, 2);
   padding: 1rem;
   font-size: 1rem;
+  display: inline-block;
 }
 .qual-content {
   display: none;
@@ -473,6 +474,10 @@ nav .fas {
     font-size: 0.7rem;
   }
 
+  .aboutText-para {
+    margin-bottom: 1.5rem;
+  }
+
   .qual-links {
     font-size: 1rem;
   }
@@ -579,9 +584,7 @@ nav .fas {
   .about-image {
     margin-bottom: 2rem;
   }
-  .aboutText-para {
-    margin: 1rem 0;
-  }
+
   .qual-links {
     font-size: 1rem;
   }
